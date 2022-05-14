@@ -21,4 +21,9 @@ router.get('/ETHUSD', (req, res) => {
     processLastSingleVwap(res, "ETH/USD");
 });
 
+//ETHGBP pair vwap
+router.get('/ETHGBP', (req, res) => {
+    processLastSingleVwap(res, "ETH/GBP");
+});
+
 module.exports = router;
